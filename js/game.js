@@ -62,6 +62,7 @@ $(function(){
 	});
 	
 	$(window).keydown(function(event){
+		event.preventDefault();
 		current_key = event.which;
 	});
 	
@@ -212,14 +213,14 @@ $(function(){
 			{
 				var ft = map[tiley][tilex];
 				var fn = "";
-				if (ft == 3) fn = "SAMOSA!";
-				else if (ft == 4) fn = "FALUDA!";
-				else if (ft == 5) fn = "WATERMELON!";
-				else if (ft == 6) fn = "RICE!";
-				else if (ft == 7) fn = "WARAKENAB!";
-				else if (ft == 8) fn = "KANAFEH!";
-				else if (ft == 9) fn = "MILK!";
-				else if (ft == 10) fn = "DATES!";
+				if (ft == 3) fn = "CVS!";
+				else if (ft == 4) fn = "Coke!";
+				else if (ft == 5) fn = "Starbucks!!";
+				else if (ft == 6) fn = "Walmart!";
+				else if (ft == 7) fn = "Clorox!";
+				else if (ft == 8) fn = "Campbells!";
+				else if (ft == 9) fn = "Dollar General!";
+				else if (ft == 10) fn = "Target!";
 				
 				$("#level-notification").html(fn + " 100 points!");
 				
