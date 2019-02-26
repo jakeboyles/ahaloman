@@ -507,7 +507,7 @@ $(function(){
 	
 	function updateScore()
 	{
-		$("#score").html("HASSANAT x" + score);
+		$("#score").html("Money x" + score);
 		$("#level").html("DATES " + level + "/30");
 	}
 	
